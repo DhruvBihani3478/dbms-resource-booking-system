@@ -1,0 +1,105 @@
+<script>
+if (sessionStorage.getItem("loggedIn") !== "true") {
+    alert("Please login first.");
+    window.location.href = "login.html";
+}
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <h2>📚 CRBS</h2>
+
+        <ul>
+
+            <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+
+            <li><a href="resources.html"><i class="fa-solid fa-book"></i> Resources</a></li>
+
+            <li><a href="bookings.html"><i class="fa-solid fa-calendar-check"></i> Bookings</a></li>
+
+            <li><a href="reports.html"><i class="fa-solid fa-chart-column"></i> Reports</a></li>
+
+            <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+
+            <li><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <div class="dashboard">
+
+            <h2>About CRBS</h2>
+
+            <div class="panel">
+
+                <h3>College Resource Booking System</h3>
+
+                <p style="margin-top:20px; line-height:1.8;">
+                    The College Resource Booking System (CRBS) is a web-based
+                    application developed to simplify the reservation of college
+                    resources such as laboratories, classrooms, seminar halls,
+                    and equipment.
+                </p>
+
+                <p style="margin-top:20px; line-height:1.8;">
+                    This project is built using HTML, CSS, JavaScript and
+                    Oracle PL/SQL. It demonstrates database design, SQL queries,
+                    PL/SQL programming, procedures, functions, triggers,
+                    views, indexing and transaction management.
+                </p>
+
+            </div>
+
+            <br>
+
+            <div class="panel">
+
+                <h3>Project Features</h3>
+
+                <ul style="margin-top:20px; padding-left:20px; line-height:2;">
+
+                    <li>User Management</li>
+
+                    <li>Resource Management</li>
+
+                    <li>Resource Booking</li>
+
+                    <li>Booking Cancellation</li>
+
+                    <li>Reports & Analytics</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

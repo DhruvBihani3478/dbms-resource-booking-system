@@ -1,0 +1,129 @@
+<script>
+if (sessionStorage.getItem("loggedIn") !== "true") {
+    alert("Please login first.");
+    window.location.href = "login.html";
+}
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CRBS Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>📚 CRBS</h2>
+
+        <ul>
+
+            <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+
+            <li><a href="resources.html"><i class="fa-solid fa-book"></i> Resources</a></li>
+
+            <li><a href="bookings.html"><i class="fa-solid fa-calendar-check"></i> Bookings</a></li>
+
+            <li><a href="reports.html"><i class="fa-solid fa-chart-column"></i> Reports</a></li>
+
+            <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+
+            <li><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <h1 class="page-title">Dashboard</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Users</h3>
+                <p>6</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Resources</h3>
+                <p>4</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Bookings</h3>
+                <p>2</p>
+            </div>
+
+            <div class="card">
+                <h3>Available Slots</h3>
+                <p>6</p>
+            </div>
+
+        </div>
+
+        <div class="dashboard-grid">
+
+            <div class="panel">
+
+                <h3>Quick Actions</h3>
+
+                <a href="resources.html" class="btn">Book Resource</a>
+
+                <a href="bookings.html" class="btn">View Bookings</a>
+
+            </div>
+
+            <div class="panel">
+
+                <h3>Recent Bookings</h3>
+
+                <table>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Resource</th>
+                        <th>Status</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Lab 1</td>
+                        <td class="approved">Approved</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Projector A</td>
+                        <td class="pending">Pending</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

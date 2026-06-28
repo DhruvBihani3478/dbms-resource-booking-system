@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Add Resource</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <h2>📚 CRBS</h2>
+
+        <ul>
+
+            <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+
+            <li><a href="resources.html"><i class="fa-solid fa-book"></i> Resources</a></li>
+
+            <li><a href="bookings.html"><i class="fa-solid fa-calendar-check"></i> Bookings</a></li>
+
+            <li><a href="reports.html"><i class="fa-solid fa-chart-column"></i> Reports</a></li>
+
+            <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+
+            <li><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <div class="dashboard">
+
+            <h2>Add New Resource</h2>
+
+            <div class="panel">
+
+                <form>
+
+                    <label><b>Resource Name</b></label><br><br>
+                    <input type="text" placeholder="Enter Resource Name"
+                    style="width:100%;padding:12px;border:1px solid #ccc;border-radius:8px;"><br><br>
+
+                    <label><b>Resource Type</b></label><br><br>
+                    <select style="width:100%;padding:12px;border:1px solid #ccc;border-radius:8px;">
+                        <option>Lab</option>
+                        <option>Room</option>
+                        <option>Equipment</option>
+                    </select><br><br>
+
+                    <label><b>Department</b></label><br><br>
+                    <select style="width:100%;padding:12px;border:1px solid #ccc;border-radius:8px;">
+                        <option>CSE</option>
+                        <option>ECE</option>
+                        <option>ME</option>
+                        <option>EEE</option>
+                    </select><br><br>
+
+                    <label><b>Status</b></label><br><br>
+                    <select style="width:100%;padding:12px;border:1px solid #ccc;border-radius:8px;">
+                        <option>Available</option>
+                        <option>Booked</option>
+                    </select><br><br>
+
+                    <a href="resources.html" class="btn">Save Resource</a>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+CREATE OR REPLACE FUNCTION check_slot(p_slot_id NUMBER)
+RETURN VARCHAR2
+IS
+v_status VARCHAR2(20);
+BEGIN
+SELECT s_status INTO v_status FROM slot WHERE slot_id = p_slot_id;
+IF v_status = 'available' THEN
+RETURN 'YES';
+ELSE
+RETURN 'NO';
+END IF;
+EXCEPTION
+WHEN NO_DATA_FOUND THEN
+RETURN 'INVALID';
+END;
+/
