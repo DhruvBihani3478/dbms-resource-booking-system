@@ -8,8 +8,8 @@ The project demonstrates the implementation of **Oracle SQL/PLSQL** concepts alo
 
 ## 🌐 Live Demo
 
-🔗 **Website:** *(Will be available after deployment)*
-https://yourusername.github.io/College-Resource-Booking-System/
+🔗 **Website:** 
+https://dhruvbihani3478.github.io/dbms-resource-booking-system/
 
 ---
 
@@ -125,7 +125,6 @@ The next phase of the project will include:
 - ⚙️ Backend development using Flask
 - 🔐 Secure user authentication
 - 📡 Real-time booking management
-- 🌐 Online deployment
 - 📊 Advanced reporting & analytics
 
 ---
